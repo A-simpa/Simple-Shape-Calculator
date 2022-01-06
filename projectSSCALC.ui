@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>748</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>711</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(255, 255, 127);
+font: 10pt &quot;Terminal&quot;;
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>SINGLE PLANE SHAPE</string>
+     </attribute>
+     <widget class="QRadioButton" name="circlebutton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(170, 85, 127);
+</string>
+      </property>
+      <property name="text">
+       <string>CIRCLE</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rectbutton1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(127, 127, 0);</string>
+      </property>
+      <property name="text">
+       <string>RECTANGLE</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="square1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 85, 127);</string>
+      </property>
+      <property name="text">
+       <string>SQUARE</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="triangle1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(170, 85, 0);</string>
+      </property>
+      <property name="text">
+       <string>TRIANGLE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="radius1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>47</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>radius</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rlen1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>150</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>length</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rbre1">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>150</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>breadth</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="slen1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>230</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>length</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sbre1">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>230</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>breadth</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="height1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>310</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>heigth</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="base1">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>310</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>base</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="r">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="l1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b1">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>120</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="l2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>190</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="h">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>270</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ba">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>270</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="b2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>190</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="area1">
+      <property name="geometry">
+       <rect>
+        <x>504</x>
+        <y>40</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+      <property name="text">
+       <string>AREA</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="centroid1">
+      <property name="geometry">
+       <rect>
+        <x>504</x>
+        <y>90</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 127);</string>
+      </property>
+      <property name="text">
+       <string>CENTROID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="answer1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>410</y>
+        <width>491</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 28pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>RESULT TEXT</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resultit1">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>360</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RESULT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearall1">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>140</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>CLEAR ALL</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>COMPOUND SHAPE CALCULATOR</string>
+     </attribute>
+     <widget class="QCheckBox" name="circlebox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CIRCLE </string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="rectanglebox1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RECTANGLE</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="squarebox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SQUARE</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="trianglebox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TRIANGLE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="area2">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>60</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+      <property name="text">
+       <string>AREA</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="centroid2">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>110</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 127);</string>
+      </property>
+      <property name="text">
+       <string>CENTROID</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearall2">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>210</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>CLEAR ALL</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rc1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lc1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bc1">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>160</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lc2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>240</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bc2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>240</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ba2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>320</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="h2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>320</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="radius1_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>90</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>radius</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rlen2">
+      <property name="geometry">
+       <rect>
+        <x>136</x>
+        <y>190</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>length</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rbre1_2">
+      <property name="geometry">
+       <rect>
+        <x>266</x>
+        <y>190</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>breadth</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="slen2">
+      <property name="geometry">
+       <rect>
+        <x>136</x>
+        <y>270</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>length</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sbre">
+      <property name="geometry">
+       <rect>
+        <x>266</x>
+        <y>270</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>breadth</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="base">
+      <property name="geometry">
+       <rect>
+        <x>136</x>
+        <y>350</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>base</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="height">
+      <property name="geometry">
+       <rect>
+        <x>266</x>
+        <y>350</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>heigth</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="answer25">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>420</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Answer:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="answer2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>420</y>
+        <width>351</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 26pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>TELL A SHAPE NAME</string>
+     </attribute>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>INPUT THE NUMBER OF CORNERS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>100</y>
+        <width>211</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>INPUT THE NUMBER OF SIDES</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="coner">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>70</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="side">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>70</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="answer3">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>230</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 28pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>ANSWER </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>270</y>
+        <width>451</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="shapename">
+      <property name="geometry">
+       <rect>
+        <x>224</x>
+        <y>160</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 85, 127);</string>
+      </property>
+      <property name="text">
+       <string>SHAPE NAME</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>711</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 0, 0);
+font: 75 italic 14pt &quot;Sitka Text&quot;;
+background-color: rgb(170, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>SUPER SHAPE CALCULATOR (S.S.CALC)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>748</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
